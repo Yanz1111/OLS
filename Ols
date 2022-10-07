@@ -1,0 +1,11 @@
+import pandas as pd                    # for data handling
+import numpy as np                     # for numerical methods and data structures
+import matplotlib.pyplot as plt        # for plotting
+import seaborn as sea                  # advanced plotting
+import statsmodels.regression.linear_model as sm
+import statsmodels.formula.api as smf  # provides a way to directly spec models from formulas
+
+x = f[['44','46','47','48','49','50','51','52','53','55','57','60','61','62','63','64','65','67','70','72','73','74','75','76','77','78','79','80','81','82','84','85','86']]
+y = f['price']
+
+sm.OLS(y, x).fit().summary()
